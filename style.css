@@ -1,0 +1,71 @@
+.contenedor {
+    background-color: aquamarine;
+    display: grid;
+    grid-template-areas:
+        "header header header"
+        "menu menu menu"
+        "contenido1 contenido2 publicidad"
+        "footer footer footer";
+    grid-template-columns: 2fr 2fr 1fr;
+    grid-template-rows: auto auto 1fr auto;
+    gap: 10px;
+    height: 100vh;
+}
+
+.header {
+    grid-area: header;
+    background-color: aqua;
+    text-align: center;
+    padding: 10px;
+}
+
+.menu {
+    grid-area: menu;
+    background-color: yellow;
+    text-align: center;
+    padding: 10px;
+}
+
+.contenido1, .contenido2 {
+    background-color: lightcyan;
+    border: 2px solid black;
+    text-align: center;
+    padding: 20px;
+    font-size: 24px;
+}
+
+.contenido1 
+{
+    grid-area: contenido1;
+}
+
+.contenido2 
+{
+    grid-area: contenido2;
+}
+
+.publicidad 
+{
+    grid-area: publicidad;
+    background-color: lightgreen;
+    padding: 10px;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.publicidad .ads 
+{
+    background-color: dodgerblue;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+.footer 
+{
+    grid-area: footer;
+    background-color: orange;
+    text-align: center;
+    padding: 10px;
+}
